@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E8AF3C6E4587285C30CF6CF /* libPods-iHouse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA977AB4C211406A9291E4B4 /* libPods-iHouse.a */; };
 		9451D2FC1C8831D000845D99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D2FB1C8831D000845D99 /* main.m */; };
 		9451D2FF1C8831D000845D99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D2FE1C8831D000845D99 /* AppDelegate.m */; };
 		9451D3021C8831D000845D99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3011C8831D000845D99 /* ViewController.m */; };
@@ -16,6 +17,37 @@
 		9451D30D1C8831D100845D99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9451D30B1C8831D100845D99 /* LaunchScreen.storyboard */; };
 		9451D3181C8831D100845D99 /* iHouseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3171C8831D100845D99 /* iHouseTests.m */; };
 		9451D3231C8831D200845D99 /* iHouseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3221C8831D200845D99 /* iHouseUITests.m */; };
+		9451D3331C88331600845D99 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3321C88331600845D99 /* Test.swift */; };
+		9451D3361C88333700845D99 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3351C88333700845D99 /* User.m */; };
+		9451D34F1C88334400845D99 /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3391C88334400845D99 /* BaseVC.m */; };
+		9451D3501C88334400845D99 /* BaseVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D33A1C88334400845D99 /* BaseVC.xib */; };
+		9451D3511C88334400845D99 /* GreenPlantsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D33D1C88334400845D99 /* GreenPlantsVC.m */; };
+		9451D3521C88334400845D99 /* GreenPlantsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D33E1C88334400845D99 /* GreenPlantsVC.xib */; };
+		9451D3531C88334400845D99 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3411C88334400845D99 /* HomeVC.m */; };
+		9451D3541C88334400845D99 /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D3421C88334400845D99 /* HomeVC.xib */; };
+		9451D3551C88334400845D99 /* PaymentOfLifeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3461C88334400845D99 /* PaymentOfLifeVC.m */; };
+		9451D3561C88334400845D99 /* PaymentOfLifeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D3471C88334400845D99 /* PaymentOfLifeVC.xib */; };
+		9451D3571C88334400845D99 /* RootTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D34A1C88334400845D99 /* RootTabBar.m */; };
+		9451D3581C88334400845D99 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D34D1C88334400845D99 /* SettingVC.m */; };
+		9451D3591C88334400845D99 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D34E1C88334400845D99 /* SettingVC.xib */; };
+		9451D3631C88335E00845D99 /* AFHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3601C88335E00845D99 /* AFHttpTool.m */; };
+		9451D3641C88335E00845D99 /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3621C88335E00845D99 /* DataBaseManager.m */; };
+		9451D3681C88342900845D99 /* StringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3671C88342900845D99 /* StringManager.m */; };
+		946C0FFC1C89229800431AD7 /* CloudBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C0FFB1C89229800431AD7 /* CloudBL.m */; };
+		946C0FFF1C8922BA00431AD7 /* CloudDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C0FFE1C8922BA00431AD7 /* CloudDao.m */; };
+		946C10031C8935A900431AD7 /* AppNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10021C8935A900431AD7 /* AppNetAPIClient.m */; };
+		946C10061C893C4800431AD7 /* iHouse_APILib.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10051C893C4800431AD7 /* iHouse_APILib.m */; };
+		946C10091C89523400431AD7 /* HeadInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10081C89523400431AD7 /* HeadInfo.m */; };
+		946C10181C8952A300431AD7 /* DBHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C100C1C8952A300431AD7 /* DBHelper.m */; };
+		946C10191C8952A300431AD7 /* Utils_AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C100E1C8952A300431AD7 /* Utils_AppInfo.m */; };
+		946C101A1C8952A300431AD7 /* Utils_DateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10101C8952A300431AD7 /* Utils_DateInfo.m */; };
+		946C101B1C8952A300431AD7 /* Utils_DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10121C8952A300431AD7 /* Utils_DeviceInfo.m */; };
+		946C101C1C8952A300431AD7 /* Utils_Other.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10151C8952A300431AD7 /* Utils_Other.m */; };
+		946C101D1C8952A300431AD7 /* Utils_UserDefaultInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10171C8952A300431AD7 /* Utils_UserDefaultInfo.m */; };
+		946C10211C89563900431AD7 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10201C89563900431AD7 /* Command.m */; };
+		946C10231C895D1D00431AD7 /* PostRefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */; };
+		946C10251C89683500431AD7 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10241C89683500431AD7 /* RefreshTokenModel.swift */; };
+		946C10271C89687600431AD7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10261C89687600431AD7 /* Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06F3EE78A1137D4BE711E20C /* Pods-iHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHouse/Pods-iHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		3855E77DDC71794E7CA49B1C /* Pods-iHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHouse/Pods-iHouse.release.xcconfig"; sourceTree = "<group>"; };
 		9451D2F71C8831D000845D99 /* iHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451D2FB1C8831D000845D99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9451D2FD1C8831D000845D99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +87,64 @@
 		9451D31E1C8831D200845D99 /* iHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451D3221C8831D200845D99 /* iHouseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iHouseUITests.m; sourceTree = "<group>"; };
 		9451D3241C8831D200845D99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9451D3311C88331600845D99 /* iHouse-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iHouse-Bridging-Header.h"; sourceTree = "<group>"; };
+		9451D3321C88331600845D99 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		9451D3341C88333700845D99 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		9451D3351C88333700845D99 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		9451D3381C88334400845D99 /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		9451D3391C88334400845D99 /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		9451D33A1C88334400845D99 /* BaseVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseVC.xib; sourceTree = "<group>"; };
+		9451D33C1C88334400845D99 /* GreenPlantsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GreenPlantsVC.h; sourceTree = "<group>"; };
+		9451D33D1C88334400845D99 /* GreenPlantsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GreenPlantsVC.m; sourceTree = "<group>"; };
+		9451D33E1C88334400845D99 /* GreenPlantsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GreenPlantsVC.xib; sourceTree = "<group>"; };
+		9451D3401C88334400845D99 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		9451D3411C88334400845D99 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		9451D3421C88334400845D99 /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
+		9451D3451C88334400845D99 /* PaymentOfLifeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentOfLifeVC.h; sourceTree = "<group>"; };
+		9451D3461C88334400845D99 /* PaymentOfLifeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentOfLifeVC.m; sourceTree = "<group>"; };
+		9451D3471C88334400845D99 /* PaymentOfLifeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentOfLifeVC.xib; sourceTree = "<group>"; };
+		9451D3491C88334400845D99 /* RootTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTabBar.h; sourceTree = "<group>"; };
+		9451D34A1C88334400845D99 /* RootTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTabBar.m; sourceTree = "<group>"; };
+		9451D34C1C88334400845D99 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
+		9451D34D1C88334400845D99 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
+		9451D34E1C88334400845D99 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
+		9451D35F1C88335E00845D99 /* AFHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHttpTool.h; sourceTree = "<group>"; };
+		9451D3601C88335E00845D99 /* AFHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpTool.m; sourceTree = "<group>"; };
+		9451D3611C88335E00845D99 /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
+		9451D3621C88335E00845D99 /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
+		9451D3651C8833A200845D99 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		9451D3661C88342900845D99 /* StringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManager.h; sourceTree = "<group>"; };
+		9451D3671C88342900845D99 /* StringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManager.m; sourceTree = "<group>"; };
+		946C0FFA1C89229800431AD7 /* CloudBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudBL.h; sourceTree = "<group>"; };
+		946C0FFB1C89229800431AD7 /* CloudBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudBL.m; sourceTree = "<group>"; };
+		946C0FFD1C8922BA00431AD7 /* CloudDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudDao.h; sourceTree = "<group>"; };
+		946C0FFE1C8922BA00431AD7 /* CloudDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudDao.m; sourceTree = "<group>"; };
+		946C10011C8935A900431AD7 /* AppNetAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNetAPIClient.h; sourceTree = "<group>"; };
+		946C10021C8935A900431AD7 /* AppNetAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNetAPIClient.m; sourceTree = "<group>"; };
+		946C10041C893C4800431AD7 /* iHouse_APILib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHouse_APILib.h; sourceTree = "<group>"; };
+		946C10051C893C4800431AD7 /* iHouse_APILib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iHouse_APILib.m; sourceTree = "<group>"; };
+		946C10071C89523400431AD7 /* HeadInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadInfo.h; sourceTree = "<group>"; };
+		946C10081C89523400431AD7 /* HeadInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadInfo.m; sourceTree = "<group>"; };
+		946C100B1C8952A300431AD7 /* DBHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBHelper.h; sourceTree = "<group>"; };
+		946C100C1C8952A300431AD7 /* DBHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBHelper.m; sourceTree = "<group>"; };
+		946C100D1C8952A300431AD7 /* Utils_AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_AppInfo.h; sourceTree = "<group>"; };
+		946C100E1C8952A300431AD7 /* Utils_AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils_AppInfo.m; sourceTree = "<group>"; };
+		946C100F1C8952A300431AD7 /* Utils_DateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_DateInfo.h; sourceTree = "<group>"; };
+		946C10101C8952A300431AD7 /* Utils_DateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils_DateInfo.m; sourceTree = "<group>"; };
+		946C10111C8952A300431AD7 /* Utils_DeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_DeviceInfo.h; sourceTree = "<group>"; };
+		946C10121C8952A300431AD7 /* Utils_DeviceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils_DeviceInfo.m; sourceTree = "<group>"; };
+		946C10131C8952A300431AD7 /* Utils_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_Header.h; sourceTree = "<group>"; };
+		946C10141C8952A300431AD7 /* Utils_Other.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_Other.h; sourceTree = "<group>"; };
+		946C10151C8952A300431AD7 /* Utils_Other.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils_Other.m; sourceTree = "<group>"; };
+		946C10161C8952A300431AD7 /* Utils_UserDefaultInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils_UserDefaultInfo.h; sourceTree = "<group>"; };
+		946C10171C8952A300431AD7 /* Utils_UserDefaultInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils_UserDefaultInfo.m; sourceTree = "<group>"; };
+		946C101E1C8955CD00431AD7 /* iHouse_URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iHouse_URL.h; sourceTree = "<group>"; };
+		946C101F1C89563900431AD7 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		946C10201C89563900431AD7 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRefreshTokenModel.swift; sourceTree = "<group>"; };
+		946C10241C89683500431AD7 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
+		946C10261C89687600431AD7 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		EA977AB4C211406A9291E4B4 /* libPods-iHouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iHouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E8AF3C6E4587285C30CF6CF /* libPods-iHouse.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +173,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A35894A8299BA5666A377ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06F3EE78A1137D4BE711E20C /* Pods-iHouse.debug.xcconfig */,
+				3855E77DDC71794E7CA49B1C /* Pods-iHouse.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9451D2EE1C8831D000845D99 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +189,8 @@
 				9451D3161C8831D100845D99 /* iHouseTests */,
 				9451D3211C8831D200845D99 /* iHouseUITests */,
 				9451D2F81C8831D000845D99 /* Products */,
+				0A35894A8299BA5666A377ED /* Pods */,
+				F9084E3D5DF780A406E1C98A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +207,17 @@
 		9451D2F91C8831D000845D99 /* iHouse */ = {
 			isa = PBXGroup;
 			children = (
+				946C10001C89357100431AD7 /* iHouse_APILib */,
+				9451D35E1C88335E00845D99 /* API */,
+				9451D35A1C88335200845D99 /* Tools */,
+				9451D3371C88334400845D99 /* Controller */,
+				9451D3301C8832EC00845D99 /* Models */,
 				9451D2FD1C8831D000845D99 /* AppDelegate.h */,
 				9451D2FE1C8831D000845D99 /* AppDelegate.m */,
 				9451D3001C8831D000845D99 /* ViewController.h */,
 				9451D3011C8831D000845D99 /* ViewController.m */,
 				9451D3031C8831D100845D99 /* Main.storyboard */,
+				9451D3651C8833A200845D99 /* Header.h */,
 				9451D3091C8831D100845D99 /* Assets.xcassets */,
 				9451D30B1C8831D100845D99 /* LaunchScreen.storyboard */,
 				9451D30E1C8831D100845D99 /* Info.plist */,
@@ -143,6 +253,163 @@
 			path = iHouseUITests;
 			sourceTree = "<group>";
 		};
+		9451D3301C8832EC00845D99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9451D3341C88333700845D99 /* User.h */,
+				9451D3351C88333700845D99 /* User.m */,
+				9451D3321C88331600845D99 /* Test.swift */,
+				9451D3311C88331600845D99 /* iHouse-Bridging-Header.h */,
+				946C101F1C89563900431AD7 /* Command.h */,
+				946C10201C89563900431AD7 /* Command.m */,
+				946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */,
+				946C10241C89683500431AD7 /* RefreshTokenModel.swift */,
+				946C10261C89687600431AD7 /* Token.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9451D3371C88334400845D99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9451D3381C88334400845D99 /* BaseVC.h */,
+				9451D3391C88334400845D99 /* BaseVC.m */,
+				9451D33A1C88334400845D99 /* BaseVC.xib */,
+				9451D33B1C88334400845D99 /* GreenPlants */,
+				9451D33F1C88334400845D99 /* Home */,
+				9451D3431C88334400845D99 /* Login */,
+				9451D3441C88334400845D99 /* Payment */,
+				9451D3481C88334400845D99 /* Register */,
+				9451D3491C88334400845D99 /* RootTabBar.h */,
+				9451D34A1C88334400845D99 /* RootTabBar.m */,
+				9451D34B1C88334400845D99 /* SettingVC */,
+			);
+			name = Controller;
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9451D33B1C88334400845D99 /* GreenPlants */ = {
+			isa = PBXGroup;
+			children = (
+				9451D33C1C88334400845D99 /* GreenPlantsVC.h */,
+				9451D33D1C88334400845D99 /* GreenPlantsVC.m */,
+				9451D33E1C88334400845D99 /* GreenPlantsVC.xib */,
+			);
+			path = GreenPlants;
+			sourceTree = "<group>";
+		};
+		9451D33F1C88334400845D99 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9451D3401C88334400845D99 /* HomeVC.h */,
+				9451D3411C88334400845D99 /* HomeVC.m */,
+				9451D3421C88334400845D99 /* HomeVC.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9451D3431C88334400845D99 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9451D3441C88334400845D99 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				9451D3451C88334400845D99 /* PaymentOfLifeVC.h */,
+				9451D3461C88334400845D99 /* PaymentOfLifeVC.m */,
+				9451D3471C88334400845D99 /* PaymentOfLifeVC.xib */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		9451D3481C88334400845D99 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9451D34B1C88334400845D99 /* SettingVC */ = {
+			isa = PBXGroup;
+			children = (
+				9451D34C1C88334400845D99 /* SettingVC.h */,
+				9451D34D1C88334400845D99 /* SettingVC.m */,
+				9451D34E1C88334400845D99 /* SettingVC.xib */,
+			);
+			path = SettingVC;
+			sourceTree = "<group>";
+		};
+		9451D35A1C88335200845D99 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				9451D3661C88342900845D99 /* StringManager.h */,
+				9451D3671C88342900845D99 /* StringManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		9451D35E1C88335E00845D99 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9451D35F1C88335E00845D99 /* AFHttpTool.h */,
+				9451D3601C88335E00845D99 /* AFHttpTool.m */,
+				9451D3611C88335E00845D99 /* DataBaseManager.h */,
+				9451D3621C88335E00845D99 /* DataBaseManager.m */,
+				946C0FFA1C89229800431AD7 /* CloudBL.h */,
+				946C0FFB1C89229800431AD7 /* CloudBL.m */,
+				946C0FFD1C8922BA00431AD7 /* CloudDao.h */,
+				946C0FFE1C8922BA00431AD7 /* CloudDao.m */,
+			);
+			name = API;
+			path = NetTools;
+			sourceTree = "<group>";
+		};
+		946C10001C89357100431AD7 /* iHouse_APILib */ = {
+			isa = PBXGroup;
+			children = (
+				946C100A1C8952A300431AD7 /* Utils */,
+				946C10011C8935A900431AD7 /* AppNetAPIClient.h */,
+				946C10021C8935A900431AD7 /* AppNetAPIClient.m */,
+				946C10041C893C4800431AD7 /* iHouse_APILib.h */,
+				946C10051C893C4800431AD7 /* iHouse_APILib.m */,
+				946C10071C89523400431AD7 /* HeadInfo.h */,
+				946C10081C89523400431AD7 /* HeadInfo.m */,
+				946C101E1C8955CD00431AD7 /* iHouse_URL.h */,
+			);
+			path = iHouse_APILib;
+			sourceTree = "<group>";
+		};
+		946C100A1C8952A300431AD7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				946C100B1C8952A300431AD7 /* DBHelper.h */,
+				946C100C1C8952A300431AD7 /* DBHelper.m */,
+				946C100D1C8952A300431AD7 /* Utils_AppInfo.h */,
+				946C100E1C8952A300431AD7 /* Utils_AppInfo.m */,
+				946C100F1C8952A300431AD7 /* Utils_DateInfo.h */,
+				946C10101C8952A300431AD7 /* Utils_DateInfo.m */,
+				946C10111C8952A300431AD7 /* Utils_DeviceInfo.h */,
+				946C10121C8952A300431AD7 /* Utils_DeviceInfo.m */,
+				946C10131C8952A300431AD7 /* Utils_Header.h */,
+				946C10141C8952A300431AD7 /* Utils_Other.h */,
+				946C10151C8952A300431AD7 /* Utils_Other.m */,
+				946C10161C8952A300431AD7 /* Utils_UserDefaultInfo.h */,
+				946C10171C8952A300431AD7 /* Utils_UserDefaultInfo.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F9084E3D5DF780A406E1C98A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA977AB4C211406A9291E4B4 /* libPods-iHouse.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +417,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9451D3271C8831D200845D99 /* Build configuration list for PBXNativeTarget "iHouse" */;
 			buildPhases = (
+				2E691349C64A93829C60EDEF /* Check Pods Manifest.lock */,
 				9451D2F31C8831D000845D99 /* Sources */,
 				9451D2F41C8831D000845D99 /* Frameworks */,
 				9451D2F51C8831D000845D99 /* Resources */,
+				AE1F6F1F44D3397D30ECF752 /* Embed Pods Frameworks */,
+				2E00BB1867EFF120D64EB71E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,8 +517,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9451D30D1C8831D100845D99 /* LaunchScreen.storyboard in Resources */,
+				9451D3541C88334400845D99 /* HomeVC.xib in Resources */,
 				9451D30A1C8831D100845D99 /* Assets.xcassets in Resources */,
+				9451D3521C88334400845D99 /* GreenPlantsVC.xib in Resources */,
+				9451D3561C88334400845D99 /* PaymentOfLifeVC.xib in Resources */,
+				9451D3591C88334400845D99 /* SettingVC.xib in Resources */,
 				9451D3051C8831D100845D99 /* Main.storyboard in Resources */,
+				9451D3501C88334400845D99 /* BaseVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +543,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E00BB1867EFF120D64EB71E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHouse/Pods-iHouse-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E691349C64A93829C60EDEF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AE1F6F1F44D3397D30ECF752 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iHouse/Pods-iHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9451D2F31C8831D000845D99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946C101D1C8952A300431AD7 /* Utils_UserDefaultInfo.m in Sources */,
+				9451D34F1C88334400845D99 /* BaseVC.m in Sources */,
+				9451D3581C88334400845D99 /* SettingVC.m in Sources */,
+				9451D3631C88335E00845D99 /* AFHttpTool.m in Sources */,
+				946C10031C8935A900431AD7 /* AppNetAPIClient.m in Sources */,
+				946C10231C895D1D00431AD7 /* PostRefreshTokenModel.swift in Sources */,
 				9451D3081C8831D100845D99 /* iHouse.xcdatamodeld in Sources */,
+				946C10181C8952A300431AD7 /* DBHelper.m in Sources */,
 				9451D3021C8831D000845D99 /* ViewController.m in Sources */,
+				946C10251C89683500431AD7 /* RefreshTokenModel.swift in Sources */,
+				946C10061C893C4800431AD7 /* iHouse_APILib.m in Sources */,
+				9451D3531C88334400845D99 /* HomeVC.m in Sources */,
+				9451D3551C88334400845D99 /* PaymentOfLifeVC.m in Sources */,
+				9451D3361C88333700845D99 /* User.m in Sources */,
+				9451D3331C88331600845D99 /* Test.swift in Sources */,
+				946C10091C89523400431AD7 /* HeadInfo.m in Sources */,
+				946C101A1C8952A300431AD7 /* Utils_DateInfo.m in Sources */,
+				946C0FFC1C89229800431AD7 /* CloudBL.m in Sources */,
+				946C10211C89563900431AD7 /* Command.m in Sources */,
 				9451D2FF1C8831D000845D99 /* AppDelegate.m in Sources */,
+				9451D3511C88334400845D99 /* GreenPlantsVC.m in Sources */,
+				946C10271C89687600431AD7 /* Token.swift in Sources */,
+				946C101B1C8952A300431AD7 /* Utils_DeviceInfo.m in Sources */,
+				946C0FFF1C8922BA00431AD7 /* CloudDao.m in Sources */,
+				946C101C1C8952A300431AD7 /* Utils_Other.m in Sources */,
+				946C10191C8952A300431AD7 /* Utils_AppInfo.m in Sources */,
+				9451D3681C88342900845D99 /* StringManager.m in Sources */,
+				9451D3571C88334400845D99 /* RootTabBar.m in Sources */,
 				9451D2FC1C8831D000845D99 /* main.m in Sources */,
+				9451D3641C88335E00845D99 /* DataBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,23 +764,30 @@
 		};
 		9451D3281C8831D200845D99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06F3EE78A1137D4BE711E20C /* Pods-iHouse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LangYue-China.iHouse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHouse/Models/iHouse-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		9451D3291C8831D200845D99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3855E77DDC71794E7CA49B1C /* Pods-iHouse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = iHouse/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LangYue-China.iHouse";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iHouse/Models/iHouse-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -502,6 +858,7 @@
 				9451D3291C8831D200845D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9451D32A1C8831D200845D99 /* Build configuration list for PBXNativeTarget "iHouseTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +867,7 @@
 				9451D32C1C8831D200845D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9451D32D1C8831D200845D99 /* Build configuration list for PBXNativeTarget "iHouseUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +876,7 @@
 				9451D32F1C8831D200845D99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
