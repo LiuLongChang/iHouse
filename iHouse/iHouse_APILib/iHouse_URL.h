@@ -25,6 +25,34 @@
 
 
 
+
+/*!
+ *  24．获取用户所有设备信息
+ */
+#define kMyEquipsURL @"/api/my_equips"
+
+
+
+
+
+
+
+//请根据API给出的SC进行配置
+#pragma mark - SC
+
+#define KSC  @"1eb3253f3acb44c0a18b0bfbb0dac3d7"
+
+
+
+
+/*!
+ *  24．获取用户所有设备信息
+ */
+#define kMyEquipsSV @"b3975723e47840bcbeb5358b5b617019"
+
+
+
+
 /**
  *  选择使用第几版主协议HeadInfo
  */

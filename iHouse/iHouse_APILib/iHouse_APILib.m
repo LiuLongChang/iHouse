@@ -176,7 +176,6 @@ NSString *const kiAndon_CloudTS = @"TS";
             break;
             
         default:
-            
             URLString = [NSString stringWithFormat:@"%@?%@",postURL,[HeadInfo getHeadInfo]];
             
             break;
@@ -204,13 +203,21 @@ NSString *const kiAndon_CloudTS = @"TS";
     
     
     
+    
+    
     [[AppNetAPIClient sharedClient:_timeInterval serviceURL:_serviceURL] POST:URLString parameters:contentDic progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
        
         
         iHouse_APILib * iHouseModel = [iHouse_APILib modelObjectWithDictionary:responseObject];
+        
+        
+        
+        
         if ([@"" isEqualToString:iHouseModel.ResultMessage] || [@"" isEqualToString:iHouseModel.ResultMessage]) {
+            
+            
             
             PostRefreshTokenModel * model = [[PostRefreshTokenModel alloc] init];
             model.uN = [Utils_UserDefaultInfo GetUserIdentifer:nil];
@@ -232,9 +239,6 @@ NSString *const kiAndon_CloudTS = @"TS";
                     [Utils_UserDefaultInfo SetUserDeviceToken:nil];
                     [Utils_UserDefaultInfo SetUserIdentifer:nil];
                     
-                    
-                    
-                    
                 }else{
                     
                     //刷新成功 重新请求
@@ -249,12 +253,8 @@ NSString *const kiAndon_CloudTS = @"TS";
             } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
                 
                 //刷新令牌失败 跳转到登录
-                
                 [Utils_UserDefaultInfo SetUserDeviceToken:nil];
                 [Utils_UserDefaultInfo SetUserIdentifer:nil];
-                
-                
-                
                 
             }];
             

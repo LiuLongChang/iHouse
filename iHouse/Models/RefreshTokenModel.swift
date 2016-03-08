@@ -30,15 +30,15 @@ class RefreshTokenModel: NSObject,NSCoding,NSCopying {
     }
     
     
-    
-    
-    
-    
-    
     class func modelObjectWithDictionary(dict:NSDictionary)->RefreshTokenModel{
-        return (RefreshTokenModel(coder: NSCoder())?.initWithDictionary(dict))!
+        return (RefreshTokenModel().initWithDictionary(dict))
     }
     
+    
+    override init() {
+        super.init()
+        
+    }
     
     
     func initWithDictionary(dict:NSDictionary)->RefreshTokenModel{

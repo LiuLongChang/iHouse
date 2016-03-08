@@ -8,10 +8,6 @@
 
 #import "HomeVC.h"
 
-#import "AFHttpTool.h"
-
-
-
 
 
 @interface HomeVC ()
@@ -37,29 +33,25 @@
     self.view.backgroundColor = [UIColor blackColor];
     [self initVariables];
     
-    
-        
-//    [[AFHttpTool shareInstance] API:JoyApartmentAPI_GetList WithType:@"1" success:^(id response) {
-//        
-//        self.dataArray = response;
-//        [_tabView reloadData];
-//        
-//    } failure:^(NSError *err) {
-//       
-//    }];
-    
-    
-    [CloudBL GetListWithType:@"1" success:^{
+    [CloudBL Login_Phone:@"18511372814" Pwd:@"123456" success:^(NSString *HGuid, Token *token, NSString *userName) {
         
         
+        
+//        [Utils_UserDefaultInfo SetUserIdentifer:HGuid];
+//        [Utils_UserDefaultInfo SetUserAccessKey:token.accessToken];
+//        [Utils_UserDefaultInfo SetUserRefreshToken:token.refreshToken];
+//        [Utils_UserDefaultInfo SetUserName:userName];
+//        [Utils_UserDefaultInfo SetUserPhone:@""];
+        
+        
+        
+        [Utils_Info setUserInfoWithHGuid:HGuid token:token userName:userName];
         
         
         
     } failure:^(NSString *errorMsg) {
-        
-        
+        [self alertWithTitle:@"发生错误" content:errorMsg ok:nil viewController:self];
     }];
-    
     
 }
 

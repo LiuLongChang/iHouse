@@ -13,24 +13,47 @@
 
 
 
-+(void)GetListWithType:(NSString*)typeStr success:(void(^)(void))success failure:(void(^)(NSString*errorMsg))failure{
+
+
+/**
+ *  4.手机账号登录
+ *
+ *  @param topInfo   手机账号登录信息
+ *  @param success   成功返回 NSMutableDictionary
+ *  @param failure   失败返回
+ *  @param exception 异常返回
+ */
+
++(void)Login_Phone:(NSString*)phoneNum Pwd:(NSString*)pwd success:(void(^)(NSString* HGuid,Token * token,NSString* userName))success failure:(void(^)(NSString* errorMsg))failure{
+  
+    PostPhoneLoginModel * model = [[PostPhoneLoginModel alloc] init];
+    
+    model.phone = phoneNum;
+    model.password = [pwd encodePassword];
+    NSDictionary * dic = model.dictionaryRepresnetation;
     
     
-    Test *  model = [[Test alloc] init];
-    model.type = typeStr;
-    NSDictionary * listDic = [model dictionaryRepresentation];
     
-    [CloudDao GetListWithDic:listDic success:^(id returnValue) {
+    [CloudDao Login_Phone:dic success:^(id returnValue) {
         
-        success();
+        PhoneLoginModel * model = [PhoneLoginModel modelObjectWithDictionary:returnValue];
+        success(model.hGUID,model.token,model.userName);
+        
         
     } failure:^(NSString *errorMsg) {
         
         failure(errorMsg);
         
+    } exception:^(NSString *errorMsg) {
+        
+        failure(@"网络请求异常");
+        
     }];
     
+    
+    
 }
+
 
 
 

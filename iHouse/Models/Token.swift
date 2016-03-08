@@ -17,9 +17,9 @@ let kTokenAccessToken = "AccessToken";
 class Token: NSObject,NSCoding,NSCopying {
     
     
-    var accessExpire : NSNumber!
-    var refreshToken : NSString!
-    var accessToken : NSString!
+    var accessExpire : NSNumber?
+    var refreshToken : NSString?
+    var accessToken : NSString?
     
     
     
@@ -28,17 +28,38 @@ class Token: NSObject,NSCoding,NSCopying {
     }
     
     
-    class func modelObjectWithDictionary(dict:NSDictionary)->Token{
-        return (Token(coder: NSCoder())?.initWithDictionary(dict))!
+    override init() {
+        super.init()
+        
+    }
+    
+    func modelObjectWithDictionary(dict:NSDictionary)->Token{
+        return Token().initWithDictionary(dict)
     }
     
     
-    
     func initWithDictionary(dict:NSDictionary)->Token{
-        if(dict.isKindOfClass(NSDictionary.classForCoder())){
-            self.accessExpire = self.objectOrNilForKey(kTokenAccessToken, fromDictionary: dict) as! NSNumber
-            self.refreshToken = self.objectOrNilForKey(kTokenRefreshToken, fromDictionary: dict) as! String
-            self.accessToken = self.objectOrNilForKey(kTokenAccessToken, fromDictionary: dict) as! String
+        if(dict.isKindOfClass(NSDictionary)){
+            
+            
+            
+            let accessExpire = self.objectOrNilForKey(kTokenAccessToken, fromDictionary: dict)
+            if !accessExpire.isKindOfClass(NSNull){
+                self.accessExpire = accessExpire as? NSNumber
+            }
+            
+            let refreshToken = self.objectOrNilForKey(kTokenRefreshToken, fromDictionary: dict)
+            if !refreshToken.isKindOfClass(NSNull){
+                self.refreshToken = refreshToken as! String
+            }
+            
+            
+            
+            let accessToken = self.objectOrNilForKey(kTokenAccessToken, fromDictionary: dict)
+            if !accessToken.isKindOfClass(NSNull){
+                self.accessToken = accessToken as! String
+            }
+            
         }
         return self
     }
@@ -54,15 +75,17 @@ class Token: NSObject,NSCoding,NSCopying {
     
     
     
+    
+    
     func objectOrNilForKey(aKey:AnyObject,fromDictionary dict:NSDictionary)->AnyObject{
         let object = dict.objectForKey(aKey)
-        return ((object?.isEqual(NSNull()) == true) ? nil : object)!
+        return (object == nil ? NSNull() : object)!
     }
     
     
     
     
-    public func encodeWithCoder(aCoder: NSCoder){
+    func encodeWithCoder(aCoder: NSCoder){
         
         aCoder.encodeObject(accessExpire, forKey: kTokenAccessExpire)
         aCoder.encodeObject(refreshToken, forKey: kTokenRefreshToken)
@@ -74,25 +97,22 @@ class Token: NSObject,NSCoding,NSCopying {
     
     required init?(coder aDecoder: NSCoder){
         
-        self.accessExpire = aDecoder.decodeObjectForKey(kTokenAccessExpire) as! NSNumber
-        self.refreshToken = aDecoder.decodeObjectForKey(kTokenRefreshToken) as! NSString
-        self.accessToken = aDecoder.decodeObjectForKey(kTokenAccessToken) as! NSString
-        
+        self.accessExpire = aDecoder.decodeObjectForKey(kTokenAccessExpire) as? NSNumber
+        self.refreshToken = aDecoder.decodeObjectForKey(kTokenRefreshToken) as? NSString
+        self.accessToken = aDecoder.decodeObjectForKey(kTokenAccessToken) as? NSString
     }
     
     
     
     func copyWithZone(zone: NSZone) -> AnyObject {
         
-        let copy = Token(coder: NSCoder())
-        if((copy) != nil){
-            
-            copy?.accessExpire = self.accessExpire
-            copy?.refreshToken = self.refreshToken.copyWithZone(zone) as! NSString
-            copy?.accessToken = self.accessToken.copyWithZone(zone) as! NSString
-        }
+        let copy = Token()
+       
+         copy.accessExpire = self.accessExpire!.copyWithZone(zone) as? NSNumber
+         copy.refreshToken = self.refreshToken!.copyWithZone(zone) as? NSString
+         copy.accessToken = self.accessToken!.copyWithZone(zone) as? NSString
         
-        return copy!
+        return copy
     }
     
     

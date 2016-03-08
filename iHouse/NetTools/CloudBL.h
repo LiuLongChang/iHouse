@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Header.h"
 
 @interface CloudBL : NSObject
 
 
 
-+(void)GetListWithType:(NSString*)typeStr success:(void(^)(void))success failure:(void(^)(NSString*errorMsg))failure;
++(void)Login_Phone:(NSString*)phoneNum Pwd:(NSString*)pwd success:(void(^)(NSString* HGuid,Token * token,NSString* userName))success failure:(void(^)(NSString* errorMsg))failure;
+
 
 
 

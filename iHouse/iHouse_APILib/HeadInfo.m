@@ -26,8 +26,6 @@
     NSString * OsVer = [Utils_DeviceInfo GetDeviceVersion];
     NSString * Os = [Utils_DeviceInfo GetDeviceSystemName];
     
-    
-    
     //App字段不可改动
     NSString *App = @"IntelliHouse";
     NSString *AppVer = [Utils_AppInfo GetAppShortVersion];
@@ -56,10 +54,6 @@
     NSDictionary *headInfoDic = [NSDictionary dictionaryWithDictionary:dic];
     NSString *queryString = [Utils_Other queryStringValue:headInfoDic];
     return queryString;
-
-    
-    
-    
     
 }
 

@@ -48,6 +48,9 @@
 *
 */
 
+#import "User.h"
+#import "Command.h"
+
 
 
 
@@ -55,8 +58,6 @@
 *   工具类
 *
 */
-#import "AFHttpTool.h"
-
 
 
 

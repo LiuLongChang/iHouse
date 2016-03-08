@@ -12,51 +12,61 @@
 @implementation CloudDao
 
 
+/*!
+ *  4．手机账号登录
+ */
+#define kPhoneLoginURL @"/api/phone_login"
 
-
-//+(void)GetListWithDic:(NSDictionary*)dict success:(void(^)(id returnValue))success failure:(void(^)(NSString*errorMsg))failure exception:((^)(NSString* errorMsg))exception{
-//    
-//    
-//    
-//    iHouse_APILib * cloud = [[iHouse_APILib alloc] init];
-//    cloud.serviceURL = serviceURL;
-////    [cloud globalTimelinePostURL: HeadInfoType:<#(ENUM_HEADINFO_TYPE)#> SC:<#(NSString *)#> SV:<#(NSString *)#> paramters:<#(id)#> success:<#^(iHouse_APILib *returnInfo)success#> failure:<#^(iHouse_APILib *returnInfo)failure#> SerException:<#^(iHouse_APILib *returnType)SerException#> NetException:<#^(NSInteger ErrorCode, NSError *ErrorMsg)NetException#>]
-//    
-//    
-//    
-//    
-//    
-//}
+/*!
+ *  4．手机账号登录
+ */
+#define kPhoneLoginSV @"a3f12d3b0d46406eb6979e2de2d8dddf"
 
 
 
-+(void)GetListWithDic:(NSDictionary*)dict success:(void(^)(id returnValue))success failure:(void(^)(NSString*errorMsg))failure{
++(void)Login_Phone:(NSDictionary*)dict success:(void(^)(id returnValue))success failure:(void(^)(NSString* errorMsg))failure exception:(void(^)(NSString* errorMsg))exception{
+    
+    
+    iHouse_APILib * cloud = [[iHouse_APILib alloc] init];
+    cloud.serviceURL = serviceURL;
     
     
     
     
-    [[AFHttpTool shareInstance] API:JoyApartmentAPI_GetList WithType:@"1" success:^(id response) {
-        
-       
+    [cloud globalTimelinePostURL:kPhoneLoginURL HeadInfoType:HEADINFO_TYPE_ONE SC:KSC SV:kPhoneLoginSV paramters:dict success:^(iHouse_APILib *returnInfo) {
         
         
         
         
+        NSLog(@"success:%@",returnInfo.ReturnValue);
+        success(returnInfo.ReturnValue);
         
         
-    } failure:^(NSError *err) {
+    } failure:^(iHouse_APILib *returnInfo) {
+        
+        NSLog(@"failure:%@ - %@",returnInfo.ResultMessage,returnInfo.ReturnValue);
+        
+    } SerException:^(iHouse_APILib *returnType) {
+        
+        NSLog(@"SerException:%@ - %@",returnType.ResultMessage,returnType.ReturnValue);
+        NSString * resultMsg = [NSString stringWithFormat:@"%@",returnType.ResultMessage];
+        NSString * returnValue = [resultMsg ErrorCode];
+        exception(returnValue);
         
         
+    } NetException:^(NSInteger ErrorCode, NSError *ErrorMsg) {
         
-        
-        
+        NSLog(@"NetException:%ld - %@",ErrorCode,[ErrorMsg description]);
+        if (ErrorCode == -1001) {
+            exception(@"网络请求超时");
+        }else{
+            exception(@"网络连接异常");
+        }
         
     }];
     
     
-    
 }
-
 
 
 

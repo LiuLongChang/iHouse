@@ -12,7 +12,21 @@
 @interface BaseVC : UIViewController
 
 
+
 @property(nonatomic,retain)MBProgressHUD * progressHud;
+
+
+
+
+
+
+
+-(void)alertWithTitle:(NSString *)titleStr content:(NSString *)content ok:(NSString *)isOk viewController:(UIViewController*)vc;
+
+
+
+
+
 
 
 

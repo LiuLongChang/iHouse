@@ -16,6 +16,12 @@
 @property(nonatomic,copy)NSString * portraitUrl;
 
 
+- (NSDictionary *)dictionaryRepresentation;
+
+
++(instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
+
+
 
 
 

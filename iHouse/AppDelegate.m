@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "RootTabBar.h"
 
+#import "Header.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -18,6 +21,39 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //PhoneLoginModel * model = [[PhoneLoginModel alloc]init];
+    
+    
+    PhoneLoginModel * info = [Utils_Info getUserInfo];
+    
+    
+    
+    
+    if (info.userName) {
+        NSLog(@"=======:    %@",info.hGUID);
+    }else{
+        NSLog(@"您未登录");
+    }
+    
+    
+    if (info.token.accessToken) {
+        NSLog(@"accessToken: %@",info.token.accessToken);
+    }else{
+        NSLog(@"没accessToken");
+    }
+    
+    
+    
+    
+    UINavigationBar * bar = [UINavigationBar appearance];
+    bar.backgroundColor = [UIColor blueColor];
+    
+    UITabBar * taBar = [UITabBar appearance];
+    taBar.barTintColor = [UIColor blackColor];
+    
+    
     
     RootTabBar * tabBar = [[RootTabBar alloc] init];
     self.window.rootViewController = tabBar;

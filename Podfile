@@ -10,7 +10,7 @@ pod 'MBProgressHUD', '~> 0.9.2'
 pod 'SDWebImage'
 pod 'Masonry', '~> 0.6.4'
 pod 'MJRefresh', '~> 3.1.0'
-
+pod 'Masonry', '~> 0.6.4'
 
 
 

@@ -18,15 +18,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    
-    //[MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    
 
     [self initUI];
     
-    
-    
 }
+
 
 -(void)initUI{
     
@@ -35,14 +31,27 @@
     [self.progressHud hide:YES];
 
     
-    //网络工具类持有旋转指示器 便于统一控制
-    AFHttpTool * tool = [AFHttpTool shareInstance];
-    tool.progressHud = self.progressHud;
+    
     
     
 }
 
 
+
+-(void)alertWithTitle:(NSString *)titleStr content:(NSString *)content ok:(NSString *)isOk viewController:(UIViewController*)vc{
+    
+    
+    UIAlertController * alert = [UIAlertController alertControllerWithTitle:titleStr message:content preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction * action1 = [UIAlertAction actionWithTitle:titleStr style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        
+    }];
+    [alert addAction:action1];
+    [vc presentViewController:alert animated:YES completion:^{
+        
+    }];
+    
+}
 
 
 

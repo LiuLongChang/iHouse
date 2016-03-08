@@ -51,7 +51,7 @@
     [self setViewControllers:array animated:YES];
     
     
-    self.tabBar.barTintColor = [UIColor cyanColor];
+    //self.tabBar.barTintColor = [UIColor cyanColor];
     
     
     

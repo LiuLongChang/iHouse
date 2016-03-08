@@ -7,12 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Header.h"
+
+
+
 
 @interface CloudDao : NSObject
 
 
 
-+(void)GetListWithDic:(NSDictionary*)dict success:(void(^)(id returnValue))success failure:(void(^)(NSString*errorMsg))failure;
+
++(void)Login_Phone:(NSDictionary*)dict success:(void(^)(id returnValue))success failure:(void(^)(NSString* errorMsg))failure exception:(void(^)(NSString* errorMsg))exception;
+
+
 
 
 

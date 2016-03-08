@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E8AF3C6E4587285C30CF6CF /* libPods-iHouse.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA977AB4C211406A9291E4B4 /* libPods-iHouse.a */; };
+		940FB2591C8D836E0059755B /* PostPhoneLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940FB2581C8D836E0059755B /* PostPhoneLoginModel.swift */; };
 		9451D2FC1C8831D000845D99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D2FB1C8831D000845D99 /* main.m */; };
 		9451D2FF1C8831D000845D99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D2FE1C8831D000845D99 /* AppDelegate.m */; };
 		9451D3021C8831D000845D99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3011C8831D000845D99 /* ViewController.m */; };
@@ -30,9 +31,10 @@
 		9451D3571C88334400845D99 /* RootTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D34A1C88334400845D99 /* RootTabBar.m */; };
 		9451D3581C88334400845D99 /* SettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D34D1C88334400845D99 /* SettingVC.m */; };
 		9451D3591C88334400845D99 /* SettingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9451D34E1C88334400845D99 /* SettingVC.xib */; };
-		9451D3631C88335E00845D99 /* AFHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3601C88335E00845D99 /* AFHttpTool.m */; };
 		9451D3641C88335E00845D99 /* DataBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3621C88335E00845D99 /* DataBaseManager.m */; };
 		9451D3681C88342900845D99 /* StringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9451D3671C88342900845D99 /* StringManager.m */; };
+		945B1D921C8ECD6B00AE5791 /* Utils_Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945B1D911C8ECD6B00AE5791 /* Utils_Info.swift */; };
+		94667DC21C8C1C0300D6E2B7 /* StringManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94667DC11C8C1C0300D6E2B7 /* StringManager.swift */; };
 		946C0FFC1C89229800431AD7 /* CloudBL.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C0FFB1C89229800431AD7 /* CloudBL.m */; };
 		946C0FFF1C8922BA00431AD7 /* CloudDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C0FFE1C8922BA00431AD7 /* CloudDao.m */; };
 		946C10031C8935A900431AD7 /* AppNetAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 946C10021C8935A900431AD7 /* AppNetAPIClient.m */; };
@@ -48,6 +50,7 @@
 		946C10231C895D1D00431AD7 /* PostRefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */; };
 		946C10251C89683500431AD7 /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10241C89683500431AD7 /* RefreshTokenModel.swift */; };
 		946C10271C89687600431AD7 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946C10261C89687600431AD7 /* Token.swift */; };
+		947B4C2A1C8E7EEA0013A6A5 /* PhoneLoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B4C291C8E7EEA0013A6A5 /* PhoneLoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,7 @@
 /* Begin PBXFileReference section */
 		06F3EE78A1137D4BE711E20C /* Pods-iHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHouse.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iHouse/Pods-iHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		3855E77DDC71794E7CA49B1C /* Pods-iHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iHouse.release.xcconfig"; path = "Pods/Target Support Files/Pods-iHouse/Pods-iHouse.release.xcconfig"; sourceTree = "<group>"; };
+		940FB2581C8D836E0059755B /* PostPhoneLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostPhoneLoginModel.swift; sourceTree = "<group>"; };
 		9451D2F71C8831D000845D99 /* iHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9451D2FB1C8831D000845D99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9451D2FD1C8831D000845D99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,13 +112,13 @@
 		9451D34C1C88334400845D99 /* SettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingVC.h; sourceTree = "<group>"; };
 		9451D34D1C88334400845D99 /* SettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingVC.m; sourceTree = "<group>"; };
 		9451D34E1C88334400845D99 /* SettingVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingVC.xib; sourceTree = "<group>"; };
-		9451D35F1C88335E00845D99 /* AFHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHttpTool.h; sourceTree = "<group>"; };
-		9451D3601C88335E00845D99 /* AFHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHttpTool.m; sourceTree = "<group>"; };
 		9451D3611C88335E00845D99 /* DataBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseManager.h; sourceTree = "<group>"; };
 		9451D3621C88335E00845D99 /* DataBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseManager.m; sourceTree = "<group>"; };
 		9451D3651C8833A200845D99 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		9451D3661C88342900845D99 /* StringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringManager.h; sourceTree = "<group>"; };
 		9451D3671C88342900845D99 /* StringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringManager.m; sourceTree = "<group>"; };
+		945B1D911C8ECD6B00AE5791 /* Utils_Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils_Info.swift; sourceTree = "<group>"; };
+		94667DC11C8C1C0300D6E2B7 /* StringManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringManager.swift; sourceTree = "<group>"; };
 		946C0FFA1C89229800431AD7 /* CloudBL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudBL.h; sourceTree = "<group>"; };
 		946C0FFB1C89229800431AD7 /* CloudBL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudBL.m; sourceTree = "<group>"; };
 		946C0FFD1C8922BA00431AD7 /* CloudDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudDao.h; sourceTree = "<group>"; };
@@ -144,6 +148,7 @@
 		946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostRefreshTokenModel.swift; sourceTree = "<group>"; };
 		946C10241C89683500431AD7 /* RefreshTokenModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		946C10261C89687600431AD7 /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		947B4C291C8E7EEA0013A6A5 /* PhoneLoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneLoginModel.swift; sourceTree = "<group>"; };
 		EA977AB4C211406A9291E4B4 /* libPods-iHouse.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iHouse.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -265,6 +270,8 @@
 				946C10221C895D1D00431AD7 /* PostRefreshTokenModel.swift */,
 				946C10241C89683500431AD7 /* RefreshTokenModel.swift */,
 				946C10261C89687600431AD7 /* Token.swift */,
+				940FB2581C8D836E0059755B /* PostPhoneLoginModel.swift */,
+				947B4C291C8E7EEA0013A6A5 /* PhoneLoginModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -347,6 +354,7 @@
 			children = (
 				9451D3661C88342900845D99 /* StringManager.h */,
 				9451D3671C88342900845D99 /* StringManager.m */,
+				94667DC11C8C1C0300D6E2B7 /* StringManager.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -354,8 +362,6 @@
 		9451D35E1C88335E00845D99 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				9451D35F1C88335E00845D99 /* AFHttpTool.h */,
-				9451D3601C88335E00845D99 /* AFHttpTool.m */,
 				9451D3611C88335E00845D99 /* DataBaseManager.h */,
 				9451D3621C88335E00845D99 /* DataBaseManager.m */,
 				946C0FFA1C89229800431AD7 /* CloudBL.h */,
@@ -398,6 +404,7 @@
 				946C10151C8952A300431AD7 /* Utils_Other.m */,
 				946C10161C8952A300431AD7 /* Utils_UserDefaultInfo.h */,
 				946C10171C8952A300431AD7 /* Utils_UserDefaultInfo.m */,
+				945B1D911C8ECD6B00AE5791 /* Utils_Info.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -599,9 +606,11 @@
 				946C101D1C8952A300431AD7 /* Utils_UserDefaultInfo.m in Sources */,
 				9451D34F1C88334400845D99 /* BaseVC.m in Sources */,
 				9451D3581C88334400845D99 /* SettingVC.m in Sources */,
-				9451D3631C88335E00845D99 /* AFHttpTool.m in Sources */,
+				947B4C2A1C8E7EEA0013A6A5 /* PhoneLoginModel.swift in Sources */,
 				946C10031C8935A900431AD7 /* AppNetAPIClient.m in Sources */,
 				946C10231C895D1D00431AD7 /* PostRefreshTokenModel.swift in Sources */,
+				945B1D921C8ECD6B00AE5791 /* Utils_Info.swift in Sources */,
+				94667DC21C8C1C0300D6E2B7 /* StringManager.swift in Sources */,
 				9451D3081C8831D100845D99 /* iHouse.xcdatamodeld in Sources */,
 				946C10181C8952A300431AD7 /* DBHelper.m in Sources */,
 				9451D3021C8831D000845D99 /* ViewController.m in Sources */,
@@ -625,6 +634,7 @@
 				9451D3681C88342900845D99 /* StringManager.m in Sources */,
 				9451D3571C88334400845D99 /* RootTabBar.m in Sources */,
 				9451D2FC1C8831D000845D99 /* main.m in Sources */,
+				940FB2591C8D836E0059755B /* PostPhoneLoginModel.swift in Sources */,
 				9451D3641C88335E00845D99 /* DataBaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

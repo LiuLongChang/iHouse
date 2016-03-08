@@ -10,19 +10,19 @@
 
 #import "Header.h"
 
-/**
- *  选择使用第几版主协议HeadInfo
- */
-typedef NS_OPTIONS(NSUInteger, ENUM_HEADINFO_TYPE){
-    /**
-     *  不使用HeadInfo
-     */
-    HEADINFO_TYPE_NONE = 1,
-    /**
-     *  使用第一版
-     */
-    HEADINFO_TYPE_ONE  = 2,
-};
+///**
+// *  选择使用第几版主协议HeadInfo
+// */
+//typedef NS_OPTIONS(NSUInteger, ENUM_HEADINFO_TYPE){
+//    /**
+//     *  不使用HeadInfo
+//     */
+//    HEADINFO_TYPE_NONE = 1,
+//    /**
+//     *  使用第一版
+//     */
+//    HEADINFO_TYPE_ONE  = 2,
+//};
 
 
 @interface iHouse_APILib : NSObject
@@ -82,41 +82,6 @@ typedef NS_OPTIONS(NSUInteger, ENUM_HEADINFO_TYPE){
 
 
 -(void)globalTimelinePostURL:(NSString*)postURL HeadInfoType:(ENUM_HEADINFO_TYPE)HeadInfoType SC:(NSString*)SC SV:(NSString*)SV paramters:(id)paramters success:(void(^)(iHouse_APILib* returnInfo))success failure:(void(^)(iHouse_APILib*returnInfo))failure SerException:(void(^)(iHouse_APILib* returnType))SerException NetException:(void(^)(NSInteger ErrorCode,NSError  *ErrorMsg))NetException;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
